@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        border: 2px solid black;
+        height: 300px;
+    }
+
+    div a {
+        justify-content: space-around;
+        padding: 50px;
+        margin: 50px;
+    }
+    .boxes img{
+        cursor: pointer;
+        width: 80vw;
+        height: 80vh;
+    }
+    img.error{
+        width: 40vw;
+        height: 40vh;
+        align-items: center;
+        padding-left: 30%;
+        image-rendering: optimizeQuality;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="boxes">
+            <img src="/sinchanim/sin1.jpeg" onclick="real()" alt="ok" class="error" >
+        </div>
+        <div class="boxes">
+            <img src="/sinchanim/sin2.png" alt="" onclick="real2()" class="error" >
+        </div>
+        <div class="boxes">
+            <img src="/sinchanim/sin3.jpeg" alt="" onclick="real3()" class="error" >
+        </div>
+        <div class="boxes">
+            <img src="/sinchanim/sin4.jpeg" alt="" onclick="real4()" class="error" >
+        </div>
+    </div>
+    <script>
+        function real(){
+            window.location.href = "https://www.youtube.com/watch?v=vQoxjQ13y1M&list=PLGa_RZxP9BEZvtdyT_2DIpQRThwMz1wYW";
+        }
+        function real2(){
+            window.location.href = "https://www.youtube.com/watch?v=KUu18_pkvbk&list=PLGa_RZxP9BEZvtdyT_2DIpQRThwMz1wYW&index=2";
+        }
+        function real3(){
+            window.location.href = "https://www.youtube.com/watch?v=BowKRml63Ww&list=PLGa_RZxP9BEZvtdyT_2DIpQRThwMz1wYW&index=3";
+        }
+        function real4() {
+            window.location.href = "https://www.youtube.com/watch?v=79Z1SQXfE-k&list=PLGa_RZxP9BEZvtdyT_2DIpQRThwMz1wYW&index=4";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Overflow</title>
+    <style>
+        .box{
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            /* overflow: scroll; */
+            overflow: auto;
+            overflow: scroll;
+            white-space: nowrap;/*scroll on horizontal side*/
+            text-overflow: ellipsis;/*Makes text ...*/
+            /* overflow: hidden; */
+            /* overflow: clip; same like hidden */
+            /* overflow-x: hidden; */
+            /* overflow-y: scroll; */
+            /* overflow: hidden auto; */ /*first is x and second is y*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis obcaecati, earum dolorum nemo quisquam, in voluptatibus fugiat, nam esse unde dicta recusandae neque error molestiae tenetur? Sit aut in, esse amet reiciendis reprehenderit soluta ipsa quibusdam quae dignissimos quo sequi ipsum facilis minus eum dolorem nobis. Iste eveniet eos iusto, minus, id esse quibusdam cupiditate, eius neque ea dolor quos! Id, odio. Dicta, optio. Quisquam sit adipisci accusamus dolores.</div>
+</body>
+</html>

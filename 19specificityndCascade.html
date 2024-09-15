@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specficity and Cascade</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .purp{
+            color: purple !important;
+        }
+        .yell{
+            color: red;
+        }
+        [data-x = a]{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="yell purp">CSS Specificity</h1>
+    <p>CSS as a cascade Algorithm <br>first rule: if position is last of same thing then last position selector will be used in this case for h1 it is purp. <br>After position Specficity is seen. like class  or html tag id tag> class tag> hrml tag.And inline css has highest priority </p>
+    <hr><p data-x="a">The [attribute] selector is used to select elements with a specified attribute. The [attribute="value"] selector is used to select elements with a specified attribute and value.</p>
+    <p>onlything which can override inline css is using !important keyword in css.</p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Lets learn it</title>
+</head>
+<body>
+    <form action="post">
+        <!-- Can handle large amounts of data
+         Post request are not cached
+         
+         <label for="username">Enter Your Username</label>
+         Post method can't be bookmarked or shared --> <div>
+             <input type="text" name = "username" placeholder="Enter your username" id="username" autofocus>
+            </div>
+            
+            <div>
+                <input type="radio" id="male"name = "gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female"name = "gender" value="male">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Subscribe to crimebox</label>
+            </div>
+            <div>
+                <label for="comment">Enter Your comment
+                </label>
+
+                    <textarea name="comment" rows="4" cols="50" id="comment">Enter your opinion here on crimes</textarea>
+            </div>
+            <select name="crime" id="">
+                <option value="a">Head chop</option>
+                <option value="b">Murder</option>
+                <option value="c">Cut his dick</option>
+                <option value="d">Electric current</option>
+            </select>
+            </form>
+    <form action="get">
+        <!-- It has limitation for data size 
+         Get can be cached
+         get can be bookmarked aand shared-->
+    </form>
+    <h2>autofocus, pattern</h2>
+</body>
+</html>

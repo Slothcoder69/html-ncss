@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX MODEL    </title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        background-color: rgb(11, 131, 235);  
+    }
+    .box1{
+        color: yellow;
+        padding: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-size: 50px;
+        border: 3px solid rgb(9, 9, 32);
+        height: 200px;
+        box-sizing: border-box;
+    }
+    .box2{
+        color: red;
+        margin: 25px;
+        border: 2px solid darkgreen;
+        padding: 10px;
+        height: 200px;
+        box-sizing: border-box;
+    }
+    </style>
+</head>
+<body>
+    <p>CSS BOX MODEL includes margin, padding and border</p>
+    <div class="box box1">A box has been created</div>
+    <div class="box box2">A box has been created again</div>
+    <p>Border box = content + padding</p>
+    <p>Margin collapse if both the margin are overlapping then the box which has more margin will take the place.</p>
+</body>
+</html>

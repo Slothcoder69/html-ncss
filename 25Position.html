@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            height: 133px;
+            padding: 3px;
+            margin: 3px;
+            width: 80vw;
+        }
+        .box1{
+background-color: aqua;position: relative;
+ z-index: 1;       }
+        .box2{
+            background-color: azure;
+            position: relative;bottom: 100px;
+        }
+        .box3{
+            background-color: antiquewhite;
+        }
+        .box4{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: blanchedalmond;">
+        Currently, the four boxes are static, and I've applied background color, border, padding, margin, as well as height and width. Since they are static, CSS properties like top and right won't have any effect.</p>
+        <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: chocolate;">
+            To move my div elements, I will add the position: relative property, allowing me to use properties like top, right, and left. If I set top: 3px, the box will move down, and if I set right: 3px, the box will move to the left.
+        </p>
+        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; background-color: cyan;">
+            If you want your lower div to appear above the upper div, you should apply z-index: 1 to that div. For the z-index to work, the div must have the position: relative property.
+            
+            Yes, this is correct. The z-index property works when an element has a position set to anything other than the default static (like relative, absolute, or fixed).</p>
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+    <div class="box4 box"></div>
+</body>
+</html>
