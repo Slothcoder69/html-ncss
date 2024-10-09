@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .container{
+            display: grid;
+            border: 2px solid black;
+            grid-template-columns: [phela]100px 130px ;
+            grid-template-rows: 100px 130px ;
+        }
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width:  55px;
+        }
+        .item:nth-child(4){
+            grid-row: 1/2;
+            grid-column: 2/3;
+        }/*item 1 was pushed u can also used overlap by telling item 1 to be in same position*/
+    </style>
+</head>
+<body>
+    <h1>
+        CSS GRID ARE USED TO MAKE LAYOUT
+    </h1>
+    <P style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        In grid u can define how many rows and colums will be in container tag. <br><b>Start with  display grid</b>
+        <br>grid-column template gices colum example:100px 100px 100px <br><b>Grid track = space of two boxes something like that and gird cell  = 1 box <br>Grid area example 2 vertical and horizontal line = gird area</b>
+    </P>
+    <div class="container">
+<div class="item">1</div>
+<div class="item">2</div>
+<div class="item">3</div>
+<div class="item ite4">4</div>
+<div class="item">5</div>
+    </div>
+</body>
+</html>

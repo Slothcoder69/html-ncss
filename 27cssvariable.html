@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        :root{
+            --Charan: green;
+
+        }
+        .lex{
+            background-color: var(--Charan);
+        }
+        
+    </style>
+</head>
+<body>
+    <p class="lex">:root(It is a global variable) example how to use root
+    </p>
+<p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+       <br> &lt;style&gt; <br>
+            :root{ <br>
+                
+                --Charan: green; <br>
+    
+            } <br>
+            .lex{ <br>
+                background-color: var(--Charan,  <span style="color: blue;">&#9632;</span>blue;); <br>
+            } <br>
+            p{ <br>
+                --Charan: red; <br>
+                &lt;/style&gt; <br>
+            }
+    </p>
+    <p>So color will become green and i can also make global variable local variable by copying and pasing it in a selectoir and changing color for that particular thing that , blue is backup if any variable is not found</p>
+    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">CSS padding also works on padding</p>
+</body>
+</html>

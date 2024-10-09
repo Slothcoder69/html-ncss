@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS selectors</title>
+    <style>
+        /* .box:first-child{ 
+            background-color: blueviolet;
+        }
+        .box::first-line{
+            color: red;
+        }*/
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+        /* [data-color="primary"]{
+            padding-top: 20px;
+            margin: 20px;
+        } */
+        .box,[data-color="primary"]{
+            padding-top: 20px;
+            margin: 20px;
+        }
+        .box:nth-child(even){/*even or odd*/
+            background-color: black;
+        }
+        /*before and after are psuedo elements*/
+        .box::before{
+            content: "hi nigga";
+        }
+        .box::after{
+            content: "hi nigga";
+        }
+        .box::selection{
+            color: red;
+            background-color: blue;
+        }
+        .box::first-letter{
+            color: gold
+        }
+        input::placeholder{
+            font-size: 22px;
+            color: red;
+            background-color: aqua;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box" data-color="primary">I ma box</div>
+        <div class="box">Iambox Lorem ipsum dolor sit amet consectetur adipisicing elit. At laudantium doloribus illo quia temporibus repudiandae sapiente facere, vero earum tenetur reiciendis eligendi officiis necessitatibus.
+        </div>
+        <div class="box">I am a box</div>
+        </div>
+        <input type="text" placeholder="efefedfegyd dedbihdhwdhw9dbwddid">
+</body>
+</html>

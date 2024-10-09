@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container { /* Fixed the typo here */
+            height: 40vh;
+            width: 100vw;
+            border: 2px solid black;
+            display: flex;
+            /* flex-wrap: wrap;  */
+            /* Moved flex-wrap outside the container */
+            align-content: center;
+            justify-content: center; /* Added to center items horizontally */
+        }
+        .item {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            margin: 4px;
+            display: flex; /* Added to center text inside items */
+            align-items: center; /* Center text vertically */
+            justify-content: center; /* Center text horizontally */
+        }
+        /* Moved order styles outside .item */
+        .order1 {
+            align-self: flex-end; 
+        }
+        .order2 {
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Display flex is a property of flexbox. <br>
+        To make a div boxes center use <code>justify-content: center;</code>. And to make them centered vertically use <code>align-items: center;</code>. <br>
+        <code>justify-content</code> has more properties. Below are some examples. <br>
+        <code>flex-direction: column;</code> property also exists, as well as <code>column-reverse</code>.
+    </p>
+    <p>
+        To make flex wrap with many properties at the center, use <code>align-content: center;</code>.<br>
+        There is also <code>wrap-reverse</code>, <code>flex-flow</code>, and the <code>gap</code> property to give spaces, including <code>row-gap</code> and <code>column-gap</code>.
+    </p>
+    <p>
+        Now item properties are based on order.
+    </p>
+    <p>flex-grow property generalyy = 0 but can add  1 or 2 so it means all the items will take equal space if two it willt ake 2 spaces. <br>flex-shrink:2; means when screen is small it will start shrinking <br>align-self:;propery use in item section  u can use that align propeerty in an particular elemnt</p>
+    <div class="container"> <!-- Fixed the class name here -->
+        <div class="item order1">1</div> <!-- Removed dot before class names -->
+        <div class="item order2">2</div>
+        <div class="item order3">3</div>
+        <div class="item order4">4</div>
+        <div class="item order5">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <div class="item">8</div>
+        <!-- Removed excessive empty items -->
+    </div>
+</body>
+</html>

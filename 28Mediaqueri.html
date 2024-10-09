@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            background-color: rebeccapurple;
+        }
+        .box{
+            display: flex;
+        }
+        .boxes{
+            background-color: fuchsia;
+            padding: 6px;
+            margin: 3px;
+            width: 450px;
+            height: 400px;
+        }
+        @media screen and(orientation: landscape) {
+         body{
+
+             background-color: blue;
+         }   
+        }
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: aqua;
+            }
+            .box{
+                flex-direction: column;
+            }
+            .boxes{
+                width: 40vw;
+                height: 30vh;
+
+            }
+
+        }
+        /* @media only screen and (min-width: 455px){ 
+             body{ 
+                 background-color: aqua; 
+             } 
+         } */
+        /* @media not|only mediatype and (expression) 
+        css code;*/
+    </style>
+</head>
+<body>
+    <div>Hi i ama red guy</div>
+    <div class="box">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+    </div>
+</body>
+</html>

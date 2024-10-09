@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .cont{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid black;
+        }
+        .box{
+            /* transform: rotate(180deg); */
+            /* transform: rotate3d(1,1,1,359deg); */
+            /* transform: rotate(0.25turn); */
+            /* transform: rotatex(100deg); */
+            /* transform: rotatex(40deg); */
+            /* transform: scale(5.6); */
+            /* transform: scaley(5.6); */           
+            /* transform: skew(50deg);  */
+            /* transform: skewx(50deg);  */
+            /* transform: skewy(50deg);  */
+            /* transform: translate(500px); */
+            /* transform: translatey(10px); */
+            transform: translateY(45%) skew(40deg) translateX(45%);
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="cont">
+            <div class="box">box</div>
+        </div>
+    </main>
+    <footer><p>U cant do skew at z-axis</p>
+        <p>u can also use multiple transform property</p></footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0; /* Added a light background color for better contrast */
+        }
+        .box {
+            background-color: yellow;
+            border: 2px solid #ccc; /* Added border color for clarity */
+            width: 30vw;
+            height: 69vh;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Added shadow for better visual appeal */
+            box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+            overflow: hidden; /* Prevents overflow if content is larger than the box */
+        }
+        .img {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .img img {
+            height: auto;
+            width: 100%;
+            max-width: 250px;
+            border: 1px solid #ddd; /* Added border around image */
+        }
+        .captions {
+            margin-bottom: 10px;
+        }
+        .captions span {
+            display: inline-block;
+            background-color: rgb(715, 294, 294);
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 5px;
+            border-radius: 5px; /* Rounded corners for the captions */
+        }
+        .para p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .spik{
+            background-color: rgb(100, 02, 250);
+            display: inline-block;
+            width: 10vw;
+            height: 12px;
+        }
+        .spik:nth-child(2){
+            background-color: black;
+            width: 10px;
+            height: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+        <div class="img">
+            <img src="pikachu.png" alt="Pikachu">
+                    </div>
+        <div class="captions">
+            <span>Pokemon</span>
+            <span>Fanmade Pikachu</span>
+        </div>
+        <div class="para">
+            <h1>Pikachu</h1>
+            <p>This fanmade Pikachu reimagines the beloved Pokémon with a fresh, creative twist. It sports vibrant, custom colors and stylish accessories like a chic scarf and trendy glasses. Its plzayful expression and dynamic pose give it a distinct personality, setting it apart from the classic design. This Pikachu is a unique blend of familiar charm and imaginative flair, capturing the essence of the original while adding a fun, personal touch.</p>
+        </div>
+    </div>     
+</body>
+</html>
